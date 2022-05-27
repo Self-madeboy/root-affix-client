@@ -1,11 +1,11 @@
 export const APP_DATA = {
   app: {
-    name: '前端',
+    name: 'English-Easy',
     description: 'Ng-zorro & Ng-alain admin panel front-end framework',
   },
   menu: [
     {
-      text: '主导航',
+      text: '导航',
       i18n: 'menu.main',
       group: true,
       hideInBreadcrumb: true,
