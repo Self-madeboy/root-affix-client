@@ -10,7 +10,7 @@ export const I18N_DATA = {
   'menu.account.settings': '个人设置',
   'menu.account.logout': '退出登录',
   'menu.account.password': '修改密码',
-  'menu.security': '系统安全',
+  'menu.vocabulary': '拼单词',
   'menu.security.authorities': '权限管理',
   'menu.security.roles': '角色管理',
   'menu.security.users': '用户管理',
