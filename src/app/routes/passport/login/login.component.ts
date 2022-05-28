@@ -87,7 +87,9 @@ export class UserLoginComponent implements OnDestroy {
           this.afterLogin(data);
         }
       },
-      null,
+      () => {
+        this.loading = false;
+      },
       () => {
         this.loading = false;
       },
