@@ -4,7 +4,6 @@ import { SharedModule } from '@shared';
 import { DashboardComponent } from './dashboard/dashboard.component';
 // single pages
 import { CallbackComponent } from './passport/callback.component';
-import { UserLockComponent } from './passport/lock/lock.component';
 // passport pages
 import { UserLoginComponent } from './passport/login/login.component';
 import { UserRegisterResultComponent } from './passport/register-result/register-result.component';
@@ -19,7 +18,6 @@ const COMPONENTS: Type<void>[] = [
   UserRegisterResultComponent,
   // single pages
   CallbackComponent,
-  UserLockComponent,
 ];
 
 @NgModule({

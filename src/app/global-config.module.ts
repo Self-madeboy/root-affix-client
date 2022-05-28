@@ -11,12 +11,14 @@ import { DelonACLModule } from '@delon/acl';
 
 const alainConfig: AlainConfig = {
   st: { modal: { size: 'lg' } },
-  pageHeader: { homeI18n: 'home' },
+  pageHeader: { homeI18n: '' },
   lodop: {
     license: `A59B099A586B3851E0F0D7FDBF37B603`,
     licenseA: `C94CEE276DB2187AE6B65D56B3FC2848`,
   },
   auth: { login_url: '/passport/login' },
+
+  // auth: { login_url: '/dashboard' },
 };
 
 const alainModules: any[] = [AlainThemeModule.forRoot(), DelonACLModule.forRoot()];
