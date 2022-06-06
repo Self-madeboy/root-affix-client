@@ -24,7 +24,7 @@ export class HttpTokenService {
    */
   login(account: string, password: string, markId?: string, validCode?: string): Observable<JwtTokenDTO> {
     return this.http.post<JwtTokenDTO>(
-      `${HttpTokenService.URL}?_allow_anonymous=true`,
+      `${HttpTokenService.URL}?_allow_anonymous=true&encrypt=body`,
       new UserLoginInfoDTO(account, password, markId, validCode),
     );
   }

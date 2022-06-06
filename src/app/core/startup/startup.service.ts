@@ -67,7 +67,7 @@ export class StartupService {
       });
 
       // ACL：设置权限
-      // this.aclService.setRole(userDTO.authorities);
+      this.aclService.setRole(userDTO.authorities);
       // this.aclService.setAbility(auth);
     } else {
       this.tokenService.clear();
@@ -75,12 +75,12 @@ export class StartupService {
 
     // 初始化菜单
     this.menuService.add(res.menu);
-    // 设置页面标题的后缀
+    // 设置页面标题的后 缀
     this.titleService.suffix = res.app.name;
     // 应用信息：包括站点名、描述、年份
     this.settingService.setApp(res.app);
     // ACL: 将权限设置为完全, https://ng-alain.com/acl/getting-started
-    // this.aclService.setFull(true);
+    this.aclService.setFull(true);
     resolve(null);
   }
 
